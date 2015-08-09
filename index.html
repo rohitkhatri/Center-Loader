@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Center Loader jQuery Plugin</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/prettify.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<section id="home">
+		<div class="center-loader masthead">
+			<div class="container">
+				<h1>Center Loader jQuery</h1>
+				<p>A simple jQuery center loader plugin.</p>
+				<p><a href="http://plugins.rohitkhatri.com/center-loader/center-loader.zip" class="btn btn-primary btn-large">Download</a></p>
+				<ul class="masthead-links">
+					<li><a href="http://github.com/rohitkhatri/center-loader">GitHub project</a></li>
+					<li>Version 1.0.0</li>
+				</ul>
+			</div>
+		</div>
+		<div class="social-btns">
+			<div class="container">
+				<ul class="social-links">
+					<li>
+						<iframe src="http://ghbtns.com/github-btn.html?user=rohitkhatri&repo=center-loader&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+					</li>
+					<li>
+						<iframe src="http://ghbtns.com/github-btn.html?user=rohitkhatri&repo=center-loader&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+					</li>
+					<li>
+						<iframe src="http://ghbtns.com/github-btn.html?user=rohitkhatri&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="20px"></iframe>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="demo">
+		<div class="container">
+			<div class="page-header">
+				<h1>Installation <small>easy to install</small></h1>
+			</div>
+			<p>Include these scripts at the top of your page in head section.</p>
+			
+<pre class="prettyprint linenums">&lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;center-loader.js&quot;&gt;&lt;/script&gt;</pre>
+			<!-- -->
+		</div>
+	</section>
+
+	<section id="demo">
+		<div class="container">
+			<div class="page-header">
+				<h1>Image Loader</h1>
+			</div>
+			<p>Hover the box below to show hide loader.</p>
+			<!-- -->
+			<div class="example" index="0">
+				<div class="demo"></div>
+			</div>
+			<!-- -->
+<pre class="prettyprint linenums">$('#example_1').loader('show','&lt;img style=&quot;height:35px; width:35px;&quot; src=&quot;img/loader1.gif&quot;&gt;');</pre>
+			<!-- -->
+		</div>
+	</section>
+
+	<section id="demo">
+		<div class="container">
+			<div class="page-header">
+				<h1>Font Awesome Loader</h1>
+			</div>
+			<p>Include font awesome css to use these loaders</p>
+			<pre class="prettyprint linenums">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&quot;&gt;</pre>			
+			<!-- -->
+			<div class="example" index="1">
+				<div class="demo"></div>
+			</div>
+			<!-- -->
+<pre class="prettyprint linenums">$('#example_2').loader('show','&lt;i class=&quot;fa fa-2x fa-spinner fa-spin&quot;&gt;&lt;/i&gt;');</pre>
+			<!-- -->
+			
+			<div class="example" index="2">
+				<div class="demo"></div>
+			</div>
+			
+<pre class="prettyprint linenums">$('#example_3').loader('show','&lt;i class=&quot;fa fa-2x fa-circle-o-notch fa-spin&quot;&gt;&lt;/i&gt;');</pre>
+
+			<div class="example" index="3">
+				<div class="demo"></div>
+			</div>
+			
+<pre class="prettyprint linenums">$('#example_4').loader('show','&lt;i class=&quot;fa fa-2x fa-refresh fa-spin&quot;&gt;&lt;/i&gt;');</pre>
+
+
+			<div class="example" index="4">
+				<div class="demo"></div>
+			</div>
+			
+<pre class="prettyprint linenums">$('#example_5').loader('show','&lt;i class=&quot;fa fa-2x fa-cog fa-spin&quot;&gt;&lt;/i&gt;');</pre>
+			
+			<div class="example" index="5">
+				<div class="demo"></div>
+			</div>
+			
+<pre class="prettyprint linenums">$('#example_6').loader('show','&lt;i class=&quot;fa fa-2x fa-spinner fa-pulse&quot;&gt;&lt;/i&gt;');</pre>
+
+		</div>
+		</div>
+	</section>
+
+	<section id="demo">
+		<div class="container">
+			<div class="page-header">
+				<h1>Hide <small>hide the loader</small></h1>
+			</div>
+
+<pre class="prettyprint linenums">$('#example').loader('hide');</pre>
+			<!-- -->
+		</div>
+	</section>
+	
+	<section style="margin-top: 50px; margin-bottom: 50px; height: 10px;">
+		<!-- Take up space -->
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/prettify.js"></script>
+	<script src="center-loader.js"></script>
+	<script>
+	var loaders = [
+		'<img style="height:35px; width:35px;" src="img/loader1.gif">',
+		'<i class="fa fa-2x fa-spinner fa-spin"></i>',
+		'<i class="fa fa-2x fa-circle-o-notch fa-spin"></i>',
+		'<i class="fa fa-2x fa-refresh fa-spin"></i>',
+		'<i class="fa fa-2x fa-cog fa-spin"></i>',
+		'<i class="fa fa-2x fa-spinner fa-pulse"></i>'
+	];
+
+	$(document).ready(function()
+	{
+		prettyPrint();
+
+		$('.example').each(function(index){
+			$(this).attr('id','example_'+(index+1));
+			$(this).loader('show',loaders[index]);
+		});
+
+		$('.example').hover(function(){
+			$(this).loader('hide');
+			$(this).find('.demo').html('<p>Loading has finished</p>');
+		},function(){
+			$(this).loader('show',loaders[$(this).attr('index')]);
+			$(this).find('.demo').html('');
+		});
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>Example</title>
+	<style type="text/css">
+	body {
+		background: #F7F7F9;
+	}
+
+	.buttons {
+		margin: 30px auto;
+		width: 400px;
+		text-align: center;
+	}
+
+	.buttons button {
+		padding: 8px 10px;
+    outline: none;
+    border: none;
+		margin: 0 20px;
+		background-color: #000;
+    color: #fff;
+    font-size: 13px;
+	}
+
+	.container {
+		width: 400px;
+		height: 200px;
+		margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #E1E1E8;
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.8);
+	}
+	</style>
+</head>
+<body>
+	<div class="buttons">
+		<button id="showLoader">Show Loader</button>
+		<button id="hideLoader">Hide Loader</button>
+	</div>
+	<div class="container">
+		<h1 align="center">Container</h1>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="center-loader.js"></script>
+	<script>
+		$('#showLoader').bind('click',function(){
+			$('.container').loader('show','<img style="height:50px; width:50px;" src="img/loader1.gif">');
+		});
+
+		$('#hideLoader').bind('click',function(){
+			$('.container').loader('hide');
+		});
+	</script>
+</body>
+</html>
